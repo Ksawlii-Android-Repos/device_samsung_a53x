@@ -23,3 +23,6 @@ DEVICE_PATH := device/samsung/a53x
 
 ## Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/props/vendor.prop
+
+# UDFPS
+TARGET_HAS_UDFPS := true
