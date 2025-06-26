@@ -14,20 +14,17 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
-    'device/samsung/a53x-common',
+    'device/samsung/s5e8825-common',
     'hardware/samsung',
     'hardware/samsung_slsi-linaro/exynos',
     'hardware/samsung_slsi-linaro/graphics',
     'hardware/samsung_slsi-linaro/interfaces',
-    'vendor/samsung/a53x-common',
+    'vendor/samsung/s5e8825-common',
 ]
 
 blob_fixups: blob_fixups_user_type = {
     'vendor/lib64/libexynoscamera3.so': blob_fixup()
         .add_needed('libshim_camera.so'),
-    'vendor/lib64/libsec-ril.so': blob_fixup()
-        .sig_replace('80 0E 40 F9 E1 03 16 AA 82 0C 80 52 E3 03 15 AA',
-            '80 0E 40 F9 E1 03 16 AA 82 0C 80 52 08 00 80 D2'),
 } # fmt: skip
 
 module = ExtractUtilsModule(
@@ -40,6 +37,6 @@ module = ExtractUtilsModule(
 
 if __name__ == '__main__':
     utils = ExtractUtils.device_with_common(
-        module, 'a53x-common', module.vendor
+        module, 's5e8825-common', module.vendor
     )
     utils.run()

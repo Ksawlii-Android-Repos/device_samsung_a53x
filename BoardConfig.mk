@@ -14,7 +14,7 @@
 # limitations under the License.
 
 ## Inherit from the common tree
-include device/samsung/a53x-common/BoardConfigCommon.mk
+include device/samsung/s5e8825-common/BoardConfigCommon.mk
 
 ## Inherit from the proprietary configuration
 include vendor/samsung/a53x/BoardConfigVendor.mk

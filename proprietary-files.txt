@@ -3,46 +3,77 @@
 ## Audio - Dolby Atmos
 vendor/lib/soundfx/libswdap.so
 
-## Audio Firmware
-vendor/firmware/calliope_sram.bin
-
 ## Bluetooth Firmware
 vendor/etc/wifi/mx140_bt.hcf
 
 ## Camera dependencies
 vendor/lib64/libexynoscamera3.so
 
-## RIL
-vendor/bin/cass
-vendor/etc/init/cass.rc
-vendor/etc/init/init.vendor.rilcommon.rc
-vendor/etc/floating_feature.xml
-vendor/etc/plmn_delta.bin
-vendor/etc/plmn_delta_chn.bin
-vendor/etc/plmn_delta_hktw.bin
-vendor/etc/plmn_se13_prebuilt.bin
-vendor/lib64/libfloatingfeature.so
-vendor/lib64/libvkmanager_vendor.so
+## Firmware
+vendor/firmware/a2dpcom.bin
+vendor/firmware/abox_tplg.bin
+vendor/firmware/abox_tplg.conf
+vendor/firmware/AP_AUDIO_SLSI.bin
+vendor/firmware/APBargeIn_AUDIO_SLSI.bin
+vendor/firmware/APBiBF_AUDIO_SLSI.bin
+vendor/firmware/APDV_AUDIO_SLSI.bin
+vendor/firmware/APSV_AUDIO_SLSI.bin
+vendor/firmware/avsyncmix.bin
+vendor/firmware/bidirmic.bin
+vendor/firmware/calliope_dram.bin
+vendor/firmware/calliope_sram.bin
+vendor/firmware/dax_param.bin
+vendor/firmware/default_configuration.flm.cfg.bin
+vendor/firmware/dolby.bin
+vendor/firmware/dual_cal_wide_sub.bin
+vendor/firmware/gt9895_a53x.bin
+vendor/firmware/is_fw_mcu.bin
+vendor/firmware/is_lib.bin
+vendor/firmware/is_rta.bin
+vendor/firmware/listenbackeffect.bin
+vendor/firmware/lmecpu_GC5035.json
+vendor/firmware/lmecpu_HI1336.json
+vendor/firmware/lmecpu_IMX258.json
+vendor/firmware/lmecpu_IMX616.json
+vendor/firmware/lmecpu_IMX682.json
+vendor/firmware/lmecpu_S5KGD2.json
+vendor/firmware/lmecpu_S5KGW1.json
+vendor/firmware/mfc_fw.bin
+vendor/firmware/nfc/sec_s3nrn4v_firmware.bin
+vendor/firmware/NPU.bin
+vendor/firmware/OD_V2.1.6_01_26_QVGA.nnc
+vendor/firmware/OD_V2.3.7_02_05_VGA.nnc
+vendor/firmware/os.checked.bin
+vendor/firmware/rxse.bin
+vendor/firmware/sb_music.bin
+vendor/firmware/sb_others.bin
+vendor/firmware/sectiongraph_tplg.bin
+vendor/firmware/sectiongraph_tplg.conf
+vendor/firmware/secure_configuration.flm.cfg.bin
+vendor/firmware/setfile_gc5035d.bin
+vendor/firmware/setfile_gc5035m.bin
+vendor/firmware/setfile_gd2.bin
+vendor/firmware/setfile_gw1.bin
+vendor/firmware/setfile_hi1336.bin
+vendor/firmware/setfile_imx258.bin
+vendor/firmware/setfile_imx616.bin
+vendor/firmware/setfile_imx682.bin
+vendor/firmware/SetMultiCalInfo.bin
+vendor/firmware/SoundBoosterParam.bin
+vendor/firmware/swcnr_IMX682.json
+vendor/firmware/swcnr_S5KGW1.json
+vendor/firmware/tfa9878.bin
+vendor/firmware/tfa98xx.cnt
+vendor/firmware/txse1.bin
+vendor/firmware/txse2.bin
+vendor/firmware/volumemonitor.bin
+vendor/firmware/vts.bin
 
-## RIL - from a14 - A145FXXS5BXA1
-vendor/bin/hw/rild|006374bbdd818b1d6ee83617ddabbf4073974e0e
-vendor/etc/init/vendor.samsung.rilchip.slsi.rc|95aa52333814b340e5064eae3a9bd5cb8a96a3ff
-vendor/etc/vintf/manifest/vendor.samsung.hardware.radio.exclude.slsi.xml|c3f8ea3f6228f2d572081b0c0ae29a251de4350b
-vendor/etc/vintf/manifest/vendor.samsung.hardware.radio_manifest_2_33.xml|e9cdde9d05c5cce32f76bbb164437f43b3288157
-vendor/etc/vintf/manifest/vendor.samsung.hardware.sehradio_manifest_2_33.xml|ebbe359a9b2d78cb88debe79d9183c039afb7c01
-vendor/lib/libsemnativecarrierfeature.so|a5c3b35d8b515ea478e6fcbe7483bfbab95b36fd
-vendor/lib64/libSemDataProps.so|86a95ebb35d80cc1ec2bdd0f80601787f1ef88ba
-vendor/lib64/libSemTelephonyProps.so|659466f18732155cbf308c14924135f2e65a3f48
-vendor/lib64/libprotobuf-cpp-full-21.7.so|92fd1090bd6aa2d00d4ae4e721f48a6e601b67d5
-vendor/lib64/libril_sem.so|0a685aa2e67d05f180edea84d55f4b4c56da4748
-vendor/lib64/libsec-ril.so|d11c5da2fa5619fa526a4d9a3d92c26678a4c671|cb8c5220ddaa2b6b2705dfa83d8f0740ea38106a
-vendor/lib64/libsemnativecarrierfeature.so|91a9c92f3b2094479090c269771a704c58ed30c6
-vendor/lib64/vendor.samsung.hardware.radio-V1-ndk.so|669709f8ff7d3435592c518ad0ba087f42b65606
-vendor/lib64/vendor.samsung.hardware.radio.bridge-V1-ndk.so|a324420e0ecab5f08c606f28eb233b68792072c7
-vendor/lib64/vendor.samsung.hardware.radio.channel-V1-ndk.so|e44c75cf85ac8f286cce8877544e2df0403579e2
-vendor/lib64/vendor.samsung.hardware.radio.data-V1-ndk.so|9d4b2dddfe22574fabc94231fc47d6a7ec99fcd1
-vendor/lib64/vendor.samsung.hardware.radio.messaging-V1-ndk.so|23184bdd3a38b864a17cabcd771ee7347da31495
-vendor/lib64/vendor.samsung.hardware.radio.sim-V1-ndk.so|f89b327cf692da0aba6d4304592b52766b736e24
+# Ramdisk firmware
+vendor_ramdisk/vendor/firmware/gt9895_a53x.bin
+
+# Recovery firmware
+vendor_ramdisk/vendor/firmware/gt9895_a53x.bin:recovery/root/vendor/firmware/gt9895_a53x.bin
 
 ## TEEGRIS Firmware
 vendor/tee/00000000-0000-0000-0000-000000010081
@@ -85,6 +116,7 @@ vendor/tee/tui/resolution_common/ID00000100
 ## VaultKeeper
 vendor/bin/vaultkeeperd
 vendor/bin/vendor.samsung.hardware.security.vaultkeeper@2.0-service
+vendor/etc/vintf/manifest/vaultkeeper_manifest.xml
 vendor/lib64/vendor.samsung.hardware.security.vaultkeeper@2.0.so
 vendor/lib64/libstork_shared.so
 vendor/lib64/libvkservice.so
