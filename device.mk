@@ -15,7 +15,7 @@
 #
 
 # Inherit from the common tree
-$(call inherit-product, device/samsung/a53x-common/common.mk)
+$(call inherit-product, device/samsung/s5e8825-common/common.mk)
 
 # Inherit proprietary files
 $(call inherit-product, vendor/samsung/a53x/a53x-vendor.mk)
@@ -25,16 +25,8 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+PRODUCT_ENFORCE_RRO_TARGETS += *
 
-# Permissions
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.telephony.gsm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.gsm.xml \
-    frameworks/native/data/etc/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.ims.xml
-
-# RIL
+# WiFi
 PRODUCT_PACKAGES += \
-    secril_config_svc \
-    sehradiomanager
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/ril/sehradiomanager.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sehradiomanager.conf
+    WifiOverlayA25X
