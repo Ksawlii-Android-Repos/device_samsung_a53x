@@ -68,6 +68,11 @@ vendor/firmware/txse2.bin
 vendor/firmware/volumemonitor.bin
 vendor/firmware/vts.bin
 
+# Keymint
+vendor/bin/hw/android.hardware.security.keymint-service:vendor/bin/hw/android.hardware.security.keymint-service.samsung
+vendor/lib64/libskeymint10device.so
+vendor/lib64/libskeymint_cli.so
+
 # Nfc
 system/etc/libnfc-nci.conf:vendor/etc/libnfc-nci.conf
 vendor/firmware/nfc/sec_s3nrn4v_firmware.bin
