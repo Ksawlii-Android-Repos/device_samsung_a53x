@@ -21,6 +21,9 @@ include vendor/samsung/a53x/BoardConfigVendor.mk
 
 DEVICE_PATH := device/samsung/a53x
 
+# Manifest
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/vintf/manifest.xml
+
 ## Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/props/vendor.prop
 

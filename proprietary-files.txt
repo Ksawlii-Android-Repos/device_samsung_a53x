@@ -39,7 +39,6 @@ vendor/firmware/lmecpu_IMX682.json
 vendor/firmware/lmecpu_S5KGD2.json
 vendor/firmware/lmecpu_S5KGW1.json
 vendor/firmware/mfc_fw.bin
-vendor/firmware/nfc/sec_s3nrn4v_firmware.bin
 vendor/firmware/NPU.bin
 vendor/firmware/OD_V2.1.6_01_26_QVGA.nnc
 vendor/firmware/OD_V2.3.7_02_05_VGA.nnc
@@ -68,6 +67,10 @@ vendor/firmware/txse1.bin
 vendor/firmware/txse2.bin
 vendor/firmware/volumemonitor.bin
 vendor/firmware/vts.bin
+
+# Nfc
+system/etc/libnfc-nci.conf:vendor/etc/libnfc-nci.conf
+vendor/firmware/nfc/sec_s3nrn4v_firmware.bin
 
 # Ramdisk firmware
 vendor_ramdisk/vendor/firmware/gt9895_a53x.bin
