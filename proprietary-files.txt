@@ -123,3 +123,13 @@ vendor/etc/vintf/manifest/vaultkeeper_manifest.xml
 vendor/lib64/vendor.samsung.hardware.security.vaultkeeper@2.0.so
 vendor/lib64/libstork_shared.so
 vendor/lib64/libvkservice.so
+
+# Wi-Fi
+vendor/etc/wifi/mx140_common.hcf
+vendor/etc/wifi/mx140_t_wlan.hcf
+vendor/etc/wifi/mx140_t_wlan_t.hcf
+vendor/etc/wifi/mx140_wlan.hcf
+vendor/etc/wifi/mx140_wlan_sw.hcf
+vendor/etc/wifi/mx140_wlan_t.hcf
+vendor/etc/wifi/mx140_wlan_t_sw.hcf
+vendor/etc/wifi/slsi_reg_database.bin
