@@ -26,7 +26,17 @@ vendor/firmware/listenbackeffect.bin
 ## Bluetooth Firmware
 vendor/etc/wifi/mx140_bt.hcf
 
+# Camera
+vendor/lib64/hw/camera.s5e8825.so
+
 ## Camera dependencies
+vendor/lib64/libexynoscamera_merta_plugin.so
+vendor/lib64/libexynoscamera_swlme_plugin.so
+vendor/lib64/libexynoscamera_vpl_plugin.so
+vendor/lib64/liblmecpu.so
+vendor/lib64/libMERTA.so
+vendor/lib64/libsec2lsi_conversion.so
+vendor/lib64/libswlme.so
 vendor/lib64/libexynoscamera3.so
 
 ## Firmware
