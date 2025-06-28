@@ -26,12 +26,12 @@ $(call inherit-product, device/samsung/a53x/device.mk)
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
-## Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+## Inherit some common PixelOS stuff
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 ## Device identifier, this must come after all inclusions
 PRODUCT_DEVICE := a53x
-PRODUCT_NAME := lineage_a53x
+PRODUCT_NAME := aosp_a53x
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-A536B
 PRODUCT_MANUFACTURER := samsung
